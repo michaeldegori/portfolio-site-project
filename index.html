@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael DeGori</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-bar dark-background">
+        <ul class="nav-bar-ul">
+            <li>
+                <button>.home</button>
+            </li>
+            <li>
+                <button>.about</button>
+            </li>
+            <li>
+                <button>.projects</button>
+            </li>
+            <li>
+                <button>.skills</button>
+            </li>
+            <li>
+                <button>.contact</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="justify-right">
+        <div class="resume-bar">
+                <a href="#">RESUME</a>
+        </div>
+    </div>
+    <div class="scrolling">
+
+        <header id="home" class="header">
+            <div class="header-text">
+                <h1>.michael(degori)</h1>
+                <h3>Full-Stack Web Developer</h3>
+            </div>
+        </header>
+
+        <section id="about" class="sections">
+            <div id="about-card">
+                <h2>.aboutMe( )</h2>
+                <div>
+                    <img src="/images/personal-pic.jpeg">
+                    <div id="about-text-box" class="dark-background">
+                        <p>
+                            Hey there! I'm Michael DeGori, a full-stack web developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="sections">
+            <div id="projects-card">
+                <h2>.projects( )</h2>
+                <div id="projects-tiles">
+                    <article>
+                        <img src="#" alt="">
+                        <h3>Project 1</h3>
+                        <p>About Project 1.</p>
+                        <a href="#">Learn More</a>
+                    </article>
+                    <article>
+                        <img src="#" alt="">
+                        <h3>Project 2</h3>
+                        <p>About Project 2.</p>
+                        <a href="#">Learn More</a>
+                    </article>
+                    <article>
+                        <img src="#" alt="">
+                        <h3>Project 3</h3>
+                        <p>About Project 3.</p>
+                        <a href="#">Learn More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="sections">
+            <div id="skills-card">
+                <h2>.skills( )</h2>
+                <p>
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                    <li>Skill 4</li>
+                    <li>Skill 5</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+        
+        <section id="contact" class="sections">
+            <div id="contact-card">
+                <h2>.getInTouch( )</h2>
+                <h3>Work Requests?</h3>
+                <div class="form">
+                    <form class="kwes-form" action="https://kwes.io/api/foreign/forms/TuCttGsRFfk9ZH88eOqw">
+                        <h3>Drop Me a Line!</h3>
+                        <input type="text" name="name" placeholder="Name" rules="required|max:50" class="kw-border-error">
+                        <small id="field-error-name" class="kw-field-error-message">This field is required.
+                        </small>
+                        <input type="email" name="email" placeholder="Email" rules="required|max:100">
+                        <textarea placeholder="Your Message" name="message" rules="required|max:255"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+       
+    </div>
+    <footer class="dark-background footer">
+        <ul class="footer-ul">
+            <li>
+                <a href="#">
+                    <img src="images/linkedin-logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/github-logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/stack-overflow-logo.png">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
+</body>
+<script src="index.js"></script>
+
+</html>
