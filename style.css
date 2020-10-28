@@ -9,7 +9,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    background-image: url(/images/header-background.jpg);
+    background-image: url(images/header-background.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ nav button {
     padding: 2vmin;
     cursor: pointer;
     outline: none;
-    font-size: 3vmin;
+    font-size: max(3vmin, 20px);
     font-weight: 400;
     color: rgb(242, 242, 240);
     text-decoration: none;
