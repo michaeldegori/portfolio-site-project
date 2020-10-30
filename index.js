@@ -19,19 +19,50 @@ let y = 0;
 
 let links = document.querySelectorAll("nav button")
 let page = "#home"
+let open = false
 
 for (let link of links) {
     link.onclick = function (event) {
         let div = `#${event.target.innerText.replace(".", "")}`
         page = div;
-        console.log(div, typeof div)
+        // console.log(div, typeof div)
         scrollingDiv.querySelector(div).scrollIntoView({
             behavior: 'smooth'
         });
-        console.log(this)
-        document.querySelectorAll(".nav-bar-ul li button").forEach(eachButton => eachButton.classList.remove("active"))
+        // console.log(this)
+        document.querySelectorAll("nav button").forEach(eachButton => eachButton.classList.remove("active"))
         this.classList.add("active")
+
+        document.querySelector("nav input").click()
     }
+}
+
+document.querySelector(".scrolling").onclick = function (e) {
+    if (open) {
+        document.querySelector("nav input").click()
+    }
+}
+document.querySelector("footer").onclick = function (e) {
+    if (open) {
+        document.querySelector("nav input").click()
+    }
+}
+
+let checkBox = document.querySelector("nav input")
+checkBox.onclick = function (event) {
+    if (checkBox.checked == true) {
+        open = true;
+        document.querySelector(".scrolling").classList.add("check-box")
+        document.querySelector(".footer").classList.add("check-box")
+        document.querySelector(".resume-bar").classList.add("check-box")
+    } else {
+        open = false;
+        document.querySelector(".scrolling").classList.remove("check-box")
+        document.querySelector(".footer").classList.remove("check-box")
+        document.querySelector(".resume-bar").classList.remove("check-box")
+    }
+    console.log(checkBox.checked)
+    // this.classList.remove("check-box")
 }
 
 window.onresize = function (event) {
