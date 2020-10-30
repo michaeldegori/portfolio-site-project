@@ -179,7 +179,7 @@ nav button {
     width: 50vw;
     border-radius: 10px;
     color: rgb(242, 242, 240);
-    padding: 4vmin;
+    padding: 0 8vmin;
 }
 
 #projects-tiles {
@@ -200,8 +200,8 @@ nav button {
 }
 
 #projects-tiles article:hover {
-    border: 4px solid rgba(233, 229, 100, .3);
-    box-shadow: 0 10px 50px 0 rgba(89, 101, 90, .5);
+    border: 5px solid rgba(0,0,0,0.05);
+    box-shadow: 0 10px 50px 0 rgba(77, 77, 77, 0.12);
     transition: .3s;
 }
 
@@ -556,12 +556,6 @@ All code below this line for mobile version of site!! */
         border-radius: 10px;
         box-shadow: 0 1px 10px rgba(0,0,0,0.12);
         margin: 1vh 0;
-    }
-    
-    #projects-tiles article:hover {
-        border: 4px solid rgba(233, 229, 100, .3);
-        box-shadow: 0 10px 50px 0 rgba(89, 101, 90, .5);
-        transition: .3s;
     }
     
     #projects-card h3 {
