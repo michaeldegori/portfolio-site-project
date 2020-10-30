@@ -174,7 +174,7 @@ nav button {
 
 #about-text-box {
     background-color: rgba(126, 126, 125, 0.6);
-    font-size: 2.5vmin;
+    font-size: 2.8vmin;
     height: 40vh;
     width: 50vw;
     border-radius: 10px;
@@ -223,7 +223,8 @@ nav button {
     height: 20vmin;
 }
 
-#contact-card h3 {
+#contact-card h3,
+#contact-card h4 {
     text-align: center;
 }
 
@@ -232,15 +233,51 @@ nav button {
     flex-direction: column;
 }
 
+#work-requests {
+    font-weight: 700;
+}
+
 .form {
     display: flex;
     justify-content: center;
 }
 
 .kwes-form {
-    width: 40vw;
+    
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.kwes-form input {
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    margin: .5vmin;
+    height: 3vmin;
+    width: 30vmin;
+    border: none;
+}
+
+.kwes-form textarea {
+    border: none;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    margin: .5vmin;
+    height: 13vmin;
+    width: 45vmin;
+}
+
+.kwes-form button {
+    font-family: ;
+    width: 15vmin;
+    height: 5vmin;
+    margin: 2vmin .5vmin;
+    border-radius: 5px;
+    background-color: rgb(233, 229, 100);
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
 }
 
 .dark-background {
@@ -534,6 +571,37 @@ All code below this line for mobile version of site!! */
 
     #skills-logos {
         flex-direction: column;
+    }
+    
+    .kwes-form input {
+        font-family: 'Lato', sans-serif;
+        border-radius: 5px;
+        margin: 1vmin;
+        height: 5vmin;
+        width: 45vmin;
+        border: none;
+    }
+    
+    .kwes-form textarea {
+        border: none;
+        font-family: 'Lato', sans-serif;
+        border-radius: 5px;
+        margin: 1vmin;
+        height: 25vmin;
+        width: 60vmin;
+    }
+    
+    .kwes-form button {
+        font-family: ;
+        width: 25vmin;
+        height: 10vmin;
+        margin: 4vmin 1vmin;
+        border-radius: 5px;
+        background-color: rgb(233, 229, 100);
+        font-size: 1.2rem;
+        border: none;
+        font-weight: 700;
+        color: rgb(77, 77, 77);
     }
 
     .footer {
